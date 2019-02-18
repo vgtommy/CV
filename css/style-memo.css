@@ -1,0 +1,149 @@
+/******************************************************************
+    BASE
+******************************************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #282828;
+    background: #F2F2F2;
+    margin: 0 auto;
+}
+
+.container{
+    margin:0 50px;
+}
+
+.titre-principal{
+    font-size: 60px;
+    color:#39b65c;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titre-secondaire{
+    font-size: 40px;
+    color:#39b65c;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.titre-trois{
+    font-size: 25px;
+    color:#39b65c;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.pseudo-element{
+    width: 100px;
+    height: 5px;
+    background: #39b65c;
+    text-align: center;
+    position: relative;
+    left: 45%;
+    margin-bottom: 50px;
+}
+
+.italic{
+    font-style: italic;
+    color: #39b65c;
+    font-size: 13px;
+}
+
+.color{
+    color: #39b65c;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 20px 60px;
+    background: #39b65c;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 700;
+}
+
+.btn:hover{
+    transition: all ease-in-out 300ms;
+    background: none;
+    padding: 20px 60px;
+    border: 3px solid #39b65c;
+    color:#39b65c;
+}
+
+#myBtn{
+    width: 50px;
+    background: none;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+
+.header{
+    background: rgb(34, 34, 34);
+    padding: 50px 0;
+    height: auto;
+    border-bottom: none;
+}
+
+.header .logo img{
+    width: 100px;
+}
+
+.header .nav{
+    text-align: right;
+    float:right;
+    margin:12px 0;
+}
+
+.header .nav li{
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.header .nav li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.header .nav li a:hover{
+    color:#39b65c;
+    transition: all linear 300ms;
+}
+
+.html-color {
+    color:#E35E2D;
+}
+
+.css-color{
+    color:#3595CE;
+}
+
+.html{
+    margin-bottom: 100px;
+}
+
+.html .container{
+    border-bottom:3px solid #39b65c;
+}
+
+.html li{
+    margin-bottom: 50px;
+}

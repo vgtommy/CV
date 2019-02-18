@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mémo HTML5 / CSS3</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-memo.css">
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("myBtn").style.display = "block";
+        } else {
+            document.getElementById("myBtn").style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo" title="Logo" >
+                <img src="img/logo.png" alt="Logo VANG Tommy">
+            </a>
+
+            <nav class="nav">
+                <ul class="menu">
+                    <li>
+                        <a href="index.html" title="Retour à l'accueil">Retour à l'accueil</a>
+                    </li>
+                    <li>
+                        <a href="#html" title="Lien vers balises hy">HTML</a>
+                    </li>
+                    <li>
+                        <a href="#css" title="Lien vers à propos">CSS</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="html">
+        <div class="container">
+            <h1 class="titre-principal">Mémo sur les balises HTML 5<br>et les propriétés CSS 3</h1>
+
+            <div class="pseudo-element"></div>
+
+            <h2 class="titre-secondaire html-color" id="html">HTML 5</h2>
+            <ul>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;header&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Représente un groupe de contenu introductif ou de contenu aidant à la navigation. Il peut contenir des éléments de titre, mais aussi d'autres éléments tels qu'un logo, un formulaire de recherche, etc.
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;div&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        C'est un conteneur qui permet d'organiser le contenu sans rien représenter de particulier. Il peut être utilisé afin de grouper d'autres éléments pour leur appliquer un style (en utilisant les attributs class ou id) Il doit uniquement être utilisé lorsqu'aucune autre balise (par exemple <strong><code>&lt;article&gt;&lt;/article&gt;</code></strong> ou <strong><code>&lt;nav&gt;&lt;/nav&gt;</code></strong> ... ) n'est approprié.
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;a&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        (pour ancre ou anchor en anglais) définit un hyperlien vers un autre endroit de la même page ou vers une autre page sur le Web.
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;nav&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Représente une section d'une page ayant des liens vers d'autres pages ou des fragments de cette page. Autrement dit, c'est une section destinée à la navigation dans un document (avec des menus, des tables des matières, des index, etc.).
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;ul&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Représente une liste d'éléments sans ordre particulier. Il est souvent représenté par une liste à puces.
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;li&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Utilisé pour représenter un élément dans une liste. Il doit être contenu dans un élément parent : une liste ordonnée <strong>(<code>&lt;ol&gt;</code>)</strong>, une liste non ordonnée <strong>(<code>&lt;ul&gt;</code>)</strong> ou un menu <strong>(<code>&lt;menu&gt;</code>)</strong>.
+                        <br>
+                        Dans les menus et les listes non ordonnées, les éléments de liste sont habituellement affichés en utilisant des puces. Dans les listes ordonnées, ils sont habituellement affichés avec compteur croissant à gauche, tel qu'un nombre ou une lettre.
+                    </p>
+                </li>
+
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;p&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Représente un paragraphe de texte. Les paragraphes sont généralement représentés comme des blocs et séparés par un espace vertical. Les paragraphes sont des éléments blocs. (display: block;)
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;img&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Permet de représenter/afficher une image dans un document
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;h1&gt;</code> à 
+                            <code>&lt;h6&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Représentent six niveaux de titres dans un document, <strong><code>&lt;h1&gt;</code></strong> est le plus important et <strong><code>&lt;h6&gt;</code></strong>est le moins important. Un élément de titre décrit brièvement le sujet de la section qu'il introduit.
+                    </p>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <p class="html-balise">
+                                <strong>
+                                    <code>&lt;table&gt;</code>
+                                </strong>
+                            </p>
+                            <p class="html-text">
+                                Permet de représenter un tableau de données, c'est-à-dire des informations exprimées sur un tableau en deux dimensions.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="html-balise">
+                                <strong>
+                                    <code>&lt;tr&gt;</code>
+                                </strong>
+                            </p>
+                            <p class="html-text">
+                                Définit une ligne de cellules dans un tableau. Une ligne peut être constituée d'éléments <strong><code>&lt;td&gt;</code></strong> (les données des cellules) et <strong><code>&lt;th&gt;</code></strong> (les cellules d'en-tête).          
+                            </p>
+                        </li>
+                        <li>
+                            <p class="html-balise">
+                                <strong>
+                                    <code>&lt;td&gt;</code>
+                                </strong>
+                            </p>
+                            <p class="html-text">
+                                Définit une cellule d'un tableau qui contient des données. Cet élément fait partie du modèle de tableau.
+                            </p>
+                        </li>
+                        <li>
+                            <p class="html-balise">
+                                <strong>
+                                    <code>&lt;th&gt;</code>
+                                </strong>
+                            </p>
+                            <p class="html-text">
+                                Définit une cellule d'un tableau comme une cellule d'en-tête pour un groupe de cellule. La nature de ce groupe est définie grâce aux attributs ="scope" et ="headers".
+                            </p>
+                        </li>
+                    </ul>
+
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;button&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Utilisé afin de créer un contrôle interactif ayant la forme d'un bouton et qui pourra être utilisé dans un formulaire ou dans le document.
+                        <br>
+                        Par défaut, les boutons HTML sont mis en forme avec les styles natifs provenant du système d'exploitation mais leur apparence peut être adaptée grâce à CSS
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;footer&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Représente le pied de page, contient habituellement des informations sur l'auteur de la section, les données relatives au droit d'auteur (copyright) ou les liens vers d'autres documents en relation.                    
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;video&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Intègre du contenu vidéo dans un document.
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;iframe&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Permet d'obtenir une page HTML intégrée dans la page courante.
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;form&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Représente une section d'un document qui contient des <strong>contrôles intéractifs</strong> permettant à un utilisateur d'envoyer des données à un serveur web.
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;label&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Représente une légende pour un objet d'une interface utilisateur. Il peut être associé à un contrôle en utilisant l'attribut ="for" ou en plaçant l'élément du contrôle à l'intérieur de l'élément.
+                        <br>
+                        Un tel contrôle est appelé contrôle étiqueté par l'élément.
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;input&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Utilisé pour créer un <strong>contrôle interactif dans un formulaire web qui permet à l'utilisateur de saisir des données.</strong>
+                        <br>
+                        Les saisies possibles et le comportement de l'élément dépend fortement de la valeur indiquée dans son attribut type.
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;select&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Représente un <strong>contrôle</strong> qui fournit une liste d'options <strong><code>&lt;option&gt;</code></strong> parmi lesquelles l'utilisateur pourra choisir.
+                    </p>
+                </li>
+                <li>
+                    <p class="html-balise">
+                        <strong>
+                            <code>&lt;textarea&gt;</code>
+                        </strong>
+                    </p>
+                    <p class="html-text">
+                        Représente un contrôle qui permet d'éditer du texte sur plusieurs lignes.
+                    </p>
+                </li>
+    
+            </ul>
+        </div>
+            
+        </div>
+
+        <div class="css">
+            <div class="container">
+                <h2 class="titre-secondaire css-color" id="html">CSS{</h2>
+                
+                <ul>
+                    <li>
+                        <p class="css-property">
+                            <code>padding</code>
+                        </p>
+                        <p class="css-text">
+                            Propriété raccourcie qui permet de définir les différents <strong>écarts intérieurs</strong> sur les quatre côtés d'un éléments(cf. les boîtes CSS). Elle synthétise <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code>, <code>padding-left</code>.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="css-property">
+                            <code>margin</code>
+                        </p>
+                        <p class="css-text">
+                            Propriété raccourcie qui permet de définir la taille des <strong>marges extérieures</strong>. C'est une propriété raccourcie qui permet de manipuler les autres propriétés de marges : <strong><code>margin-top</code></strong>, <strong><code>margin-right</code></strong>, <code>margin-bottom</code>, <code>margin-lef</code>t.
+                        </p>
+                    </li>
+                    <li>
+                        <p class="css-property">
+                            <code>font-family</code>
+                        </p>
+                        <p class="css-text">
+                            permet aux auteurs d'un document de définir la police de caractères à utiliser au sein d'une règle @ <code>@font-face</code>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="css-property">
+                            <code>font-face</code>
+                        </p>
+                        <p class="css-text">
+                            En permettant aux auteurs de fournir leurs propres polices, il n'est plus nécessaire de dépendre uniquement des polices qui sont installées sur les postes des utilisateurs.
+                            <br>
+                            Il est courant d'utiliser la forme <strong><code>url()</code></strong> afin de pouvoir utiliser une police téléchargée
+                        </p>
+                    </li>
+    
+                </ul>
+                
+                <h2 class="titre-secondaire css-color">}</h2>
+
+            </div>
+        </div>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="img/up-arrow.svg" alt="Go to top arrow">
+        </button>
+        
+</body>
+</html>
